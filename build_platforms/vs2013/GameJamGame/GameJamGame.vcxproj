@@ -10,6 +10,27 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\main.h" />
+    <ClInclude Include="..\..\..\src\matrixMath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\main.c" />
+    <ClCompile Include="..\..\..\src\matrixMath.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\src\alphabet.png" />
+    <Image Include="..\..\..\src\Blue.png" />
+    <Image Include="..\..\..\src\Circle.png" />
+    <Image Include="..\..\..\src\Green.png" />
+    <Image Include="..\..\..\src\Level.png" />
+    <Image Include="..\..\..\src\PlayPrompt.png" />
+    <Image Include="..\..\..\src\Purple.png" />
+    <Image Include="..\..\..\src\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\src\BRD-Teleport_Prokg.wav" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E8A80485-541A-4824-8ADF-8F2E7403F1B9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -85,28 +106,6 @@
       <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3.lib;glew32.lib;SOIL.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="matrixMath.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="main.h" />
-    <ClInclude Include="matrixMath.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="alphabet.png" />
-    <Image Include="Circle.png" />
-    <Image Include="Level.png" />
-    <Image Include="PlayPrompt.png" />
-    <Image Include="sample.png" />
-    <Image Include="sample2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Helvetica.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="BRD-Teleport_Prokg.wav" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

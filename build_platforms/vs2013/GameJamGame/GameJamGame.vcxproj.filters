@@ -15,48 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="matrixMath.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="matrixMath.h">
+    <ClInclude Include="..\..\..\src\main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
+    <ClInclude Include="..\..\..\src\matrixMath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="sample.png">
+    <ClCompile Include="..\..\..\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\matrixMath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\src\alphabet.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="sample2.png">
+    <Image Include="..\..\..\src\Blue.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="PlayPrompt.png">
+    <Image Include="..\..\..\src\Circle.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Circle.png">
+    <Image Include="..\..\..\src\Green.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Level.png">
+    <Image Include="..\..\..\src\Level.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="alphabet.png">
+    <Image Include="..\..\..\src\PlayPrompt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\src\Purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\src\Red.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Helvetica.ttf">
-      <Filter>Resource Files</Filter>
-    </Font>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="BRD-Teleport_Prokg.wav">
+    <Media Include="..\..\..\src\BRD-Teleport_Prokg.wav">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>
