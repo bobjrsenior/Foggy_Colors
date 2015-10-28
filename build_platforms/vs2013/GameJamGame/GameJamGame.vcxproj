@@ -74,7 +74,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\user\Documents\Game Development\Workspaces\Visual Studio\Libraries\ft26\freetype-2.6\include;C:\Users\user\Documents\Game Development\Workspaces\Visual Studio\Libraries\soil\Simple_OpenGL_Image_Library\src;C:\Users\user\Documents\Game Development\Workspaces\Visual Studio\Libraries\glfw-3.1.1.bin.WIN32\glfw-3.1.1.bin.WIN32\include;C:\Users\user\Documents\Game Development\Workspaces\Visual Studio\Libraries\glew-1.12.0-win32\glew-1.12.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\Simple_OpenGL_Image_Library\src;..\..\..\Libraries\glfw\include;..\..\..\Libraries\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>

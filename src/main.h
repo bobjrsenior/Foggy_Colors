@@ -25,9 +25,12 @@
 #include <math.h>
 
 //Audio
+#ifdef _WIN32
 #include <Windows.h>
 #include <Mmsystem.h>
+#endif
 
+//Draws text to the screen at a specified location and scale
 void drawText(char* text, GLuint squareuniOverrideTex, GLuint squareuniShowTex, GLuint squareShaderProgram, GLuint squareuniTexOverride, GLuint squareuniScale, GLuint squareuniTranslation, GLuint squareuniColor, GLfloat xPos, GLfloat yPos, GLfloat scale);
 
 //Callbacks

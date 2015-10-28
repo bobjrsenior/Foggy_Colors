@@ -313,7 +313,9 @@ int main(void)
 	vec4* square2Color = makeNewVec4(0.0f, 0.0f, 1.0f, 1.0f);
 	vec4* square3Color = makeNewVec4(0.0f, 1.0f, 0.0f, 1.0f);
 	int tex1, tex2, tex3;
+	#ifdef _WIN32
 	PlaySound(TEXT("BRD-Teleport_Prokg.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	#endif
 	while (!glfwWindowShouldClose(window))
 	{
 		GLfloat ratio;
@@ -350,7 +352,7 @@ int main(void)
 				
 				drawText("You Win", squareuniOverrideTex, squareuniShowTex, squareShaderProgram, squareuniTexOverride, squareuniScale, squareuniTranslation, squareuniColor, -0.5f, 0.8f, 1.0f);
 				strcpy(buffer, "Misses:");
-				_itoa(trys - points, &buffer[7], 10);
+				sprintf(&buffer[7], "%d", trys - points);
 				drawText(buffer, squareuniOverrideTex, squareuniShowTex, squareShaderProgram, squareuniTexOverride, squareuniScale, squareuniTranslation, squareuniColor, -0.6f, 0.5f, 0.8f);
 				strcpy(buffer, "Time Taken:");
 				sprintf(&buffer[11], "%.3f", totalTime);
@@ -863,8 +865,10 @@ int main(void)
 	glDeleteBuffers(1, &squarevao);
 	glDeleteBuffers(1, &squarevbo);
 
+	#ifdef _WIN32
 	//End background song
 	PlaySound(NULL, NULL, SND_FILENAME);
+	#endif
 	exit(EXIT_SUCCESS);
 }
 

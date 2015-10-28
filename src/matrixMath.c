@@ -361,6 +361,10 @@ void printMat4(const mat4* matrix){
 	printf("%f %f %f %f\n\n", matrix->w[0], matrix->w[1], matrix->w[2], matrix->w[3]);
 }
 
+void printVec4(const vec4* vector){
+	printf("%f %f %f %f\n\n", vector->arr[0], vector->arr[1], vector->arr[2], vector->arr[3]);
+}
+
 void printVec3(const vec3* vector){
 	printf("%f %f %f\n\n", vector->arr[0], vector->arr[1], vector->arr[2]);
 }

@@ -1,12 +1,12 @@
 //Includes
-//Include GLEW  
-#include <GL/glew.h>  
 
-//Include GLFW  
-#include <GLFW/glfw3.h>
+//Define GLfloat if it isn't already
+#ifndef GLfloat
+#define GLfloat float
+#endif
 
 #include <math.h>
-#include <stdio.h>
+//Allows for allocating memory
 #include <stdlib.h>
 
 #define M_PI 3.14159265358979323846
@@ -109,6 +109,8 @@ void multMat4Vec3(vec3* vector, const mat4* first, const vec3* second);
 vec3* multNewMat4Vec3(const mat4* first, const vec3* second);
 
 void printMat4(const mat4* matrix);
+
+void printVec4(const vec4* vector);
 
 void printVec3(const vec3* matrix);
 
