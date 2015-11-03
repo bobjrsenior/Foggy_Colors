@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 
 #define GLSL(src) "#version 150 core\n" #src
 
@@ -40,7 +40,7 @@ const GLchar* squareFragmentSource = GLSL(
 );
 
 char keys[349];
-char state = 5;
+char state = -1;
 
 //Possible shape colors
 const int numColors = 8;
@@ -302,7 +302,7 @@ int main(void)
 	double totalTime = 0;
 	GLfloat colorTimer = 0.9f;
 	GLfloat colorCountdown = colorTimer;
-	int points = 29;
+	int points = 0;
 	int trys = 0;
 	int pointCalc;
 	int shapes;

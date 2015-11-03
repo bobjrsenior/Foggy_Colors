@@ -21,9 +21,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
-
+#include <ctype.h>
 #include <math.h>
-
+#include <string.h>
 //Audio
 #ifdef _WIN32
 #include <Windows.h>

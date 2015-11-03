@@ -1,4 +1,3 @@
-#pragma once
 #include "matrixMath.h"
 
 void getMat4(mat4* matrix){
